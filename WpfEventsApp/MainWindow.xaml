@@ -1,0 +1,25 @@
+﻿<Window x:Class="WpfEventsApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfEventsApp"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <StackPanel Orientation="Horizontal">
+        <Button Width="300" Height="300" Background="Green" PreviewMouseDown="Button_PreviewMouseDown">
+            <Button Width="200" Height="200" Background="Blue">
+                <Button Width="100" Height="100" 
+                        Background="Red" 
+                            PreviewMouseDown="Button_PreviewMouseDown">
+                    <Button Width="50" 
+                            Height="50"
+                            
+                            PreviewMouseDown="Button_PreviewMouseDown"/>
+                </Button>
+            </Button>
+        </Button>
+
+        <TextBlock x:Name="tablo"/>
+    </StackPanel>
+</Window>
